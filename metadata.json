@@ -1,0 +1,8 @@
+{
+  "name": "+Quiz Patri López Keto",
+  "description": "¿Tu peso es grasa, inflamación o retención? Descúbrelo con este quiz de Patri López Keto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-vino: #3E1126;
+  --color-vino-dk: #1F1119;
+  --color-lima: #BDC739;
+  --color-crema: #F5EEE3;
+  --color-bronce: #B89968;
+  --color-text-body: #2C1A22;
+  --color-text-muted: #9A8A8E;
+
+  --radius-card: 2rem;
+  --radius-btn: 2rem;
+  --radius-sm: 1rem;
+
+  --shadow-card: 0 25px 50px -12px rgba(62, 17, 38, 0.13);
+  --shadow-soft: 0 8px 24px rgba(62, 17, 38, 0.08);
+}
+
+@layer base {
+  body {
+    @apply font-sans text-text-body antialiased selection:bg-lima/30;
+  }
+
+  .italic-serif {
+    @apply font-serif italic font-normal;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-[1120px] mx-auto px-6 md:px-8;
+  }
+
+  .cta-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-lima text-vino-dk font-medium py-4 px-8 rounded-btn transition-transform hover:scale-101 hover:bg-lima/90 active:scale-95 w-full max-w-[420px];
+  }
+}
